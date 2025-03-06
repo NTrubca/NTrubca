@@ -1,0 +1,219 @@
+- 👋 Hi, I’m @NTrubca
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+
+<!---
+NTrubca/NTrubca is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTax-Büroservice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">NTax-Büroservice</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#services">Leistungen</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Ihr Partner für Buchhaltung & Büroservice</h1>
+        <p>Professionelle Buchhaltungsdienste, Lohnabrechnung, Steuererklärungen und mehr.</p>
+        <a href="#contact" class="cta-button">Kontakt aufnehmen</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Unsere Leistungen</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <h3>Buchhaltung</h3>
+                <p>Komplette Buchführung für Ihr Unternehmen.</p>
+            </div>
+            <div class="service-box">
+                <h3>Lohnabrechnung</h3>
+                <p>Professionelle Gehaltsabrechnung für Ihre Mitarbeiter.</p>
+            </div>
+            <div class="service-box">
+                <h3>Steuererklärungen</h3>
+                <p>Wir unterstützen Sie bei Ihrer Steuererklärung.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+        <form>
+            <input type="text" placeholder="Ihr Name" required>
+            <input type="email" placeholder="Ihre E-Mail" required>
+            <textarea placeholder="Ihre Nachricht" required></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 NTax-Büroservice | Alle Rechte vorbehalten</p>
+    </footer>
+</body>
+</html>
+/* Allgemeine Stile */
+body {
+    background-color: black;
+    color: gold;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: gold;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero-Bereich */
+.hero {
+    padding: 100px 20px;
+    background-image: url('https://source.unsplash.com/1600x900/?business,office');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gold;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.cta-button:hover {
+    background-color: orange;
+}
+
+/* Leistungsbereich */
+.services {
+    padding: 50px 20px;
+    background-color: #222;
+}
+.services h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.service-box {
+    background-color: black;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+.service-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.service-box p {
+    font-size: 16px;
+}
+
+/* Kontaktformular */
+.contact {
+    padding: 50px 20px;
+}
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+form {
+    max-width: 400px;
+    margin: auto;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid gold;
+    border-radius: 5px;
+    background-color: black;
+    color: gold;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: gold;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: orange;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    background-color: #111;
+    border-top: 1px solid gold;
+    margin-top: 50px;
+}
+
